@@ -1,0 +1,94 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--Grey900);
+}
+h2,
+p {
+  color: var(--White);
+}
+h4 {
+  color: var(--Green);
+}
+
+.main-container {
+  background-color: var(--Grey800);
+  height: 43rem;
+  width: 26rem;
+  border-radius: 0.7rem;
+  position: relative;
+}
+.content-container {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  margin: -50px 0 0 -50px;
+}
+
+.avatar-image {
+  border-radius: 50%;
+  width: 7rem;
+  margin-bottom: 20px;
+}
+
+.location {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.name,
+.location {
+  margin-left: -35px;
+}
+.hobbies {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: -60px;
+  padding-right: 5rem;
+  width: 28rem;
+}
+
+button.media-button {
+  border-radius: 1rem;
+  background-color: var(--Grey700);
+  margin-left: -60px;
+  margin-bottom: 15px;
+  width: 19rem;
+  height: 3rem;
+}
+
+div.media-container :hover {
+  background-color: var(--Green);
+  transition: 0.5s;
+  color: black;
+  cursor: pointer;
+  caret-color: black;
+}
+p.media-name {
+  font-size: larger;
+  font-style: bold;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+span {
+  color: white;
+}
